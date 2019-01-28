@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   require 'sidekiq-status/web'
   mount Sidekiq::Web => '/sidekiq'
+
+  root to: 'home#index'
 end
