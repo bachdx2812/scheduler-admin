@@ -3,7 +3,7 @@
 ### Development Environment
 #### Required these below `applications` to run in background
 - mysql server
-- redis
+- redis (default port 6379)
 
 #### DB:
 ```bash
