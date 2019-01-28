@@ -1,0 +1,16 @@
+default: &default
+  url: <%= Rails.application.secrets.redis[:url] %>
+development:
+  <<: *default
+test:
+  <<: *default
+dev_stage:
+  <<: *default
+  db: 1
+  name_space: BeeCloud:dev
+staging:
+  <<: *default
+  db: 0
+  name_space: BeeCloud:staging
+production:
+  <<: *default

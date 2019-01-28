@@ -1,0 +1,5 @@
+:environment: development
+:verbose: true
+:concurrency: 5
+:queues:
+  - mailers

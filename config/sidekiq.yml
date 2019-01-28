@@ -1,0 +1,9 @@
+default: &default
+  url: 127.0.0.1:6379
+  namespace: Scheduler::Development
+development:
+  <<: *default
+test:
+  <<: *default
+production:
+  <<: *default
