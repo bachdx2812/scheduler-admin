@@ -1,0 +1,3 @@
+class SalonService < ApplicationRecord
+
+end

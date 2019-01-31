@@ -1,0 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+create_table "salon_schedules", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  t.bigint   "salon_id"
+  t.bigint   "user_id"
+  t.datetime "start_time"
+  t.datetime "end_time"
+  t.datetime "created_at"
+  t.datetime "updated_at"
+end

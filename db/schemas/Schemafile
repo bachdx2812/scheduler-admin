@@ -2,3 +2,10 @@
 # vi: set ft=ruby :
 
 require 'salons.schema'
+require 'users.schema'
+require 'salon_users.schema'
+require 'salon_services.schema'
+require 'salon_schedules.schema'
+require 'salon_schedule_services.schema'
+require 'salon_schedule_requests.schema'
+require 'salon_request_services.schema'
