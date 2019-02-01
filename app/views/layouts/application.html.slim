@@ -8,7 +8,17 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application'
+    = stylesheet_pack_tag 'application'
+
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /
+    /! Fonts and icons
+    link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet"
+    link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"
+
   body
-    #app
-      = yield
-      Test
+    #test
+      h1 hklsahdklajskdljsa
+    #app.wrapper
+      = render "layouts/shared/sidebar"
+      div(data-color="green")

@@ -1,0 +1,87 @@
+.sidebar data-color="green" data-image="sidebar-2.jpg" style=("background-image: image-url('sidebar-2.jpg';);")
+  .logo
+    a.simple-text.logo-mini href="#" /
+    .logo-img
+      = image_tag "vue-logo.png"
+    a.simple-text.logo-normal href="https://www.creative-tim.com/product../" target="_blank"
+      | Vue MD
+  .sidebar-wrapper
+    ul.nav.nav-mobile-menu
+      li
+        .md-field.md-theme-default
+          label for="md-input-ezy9d4uhf" Search
+          input#md-input-ezy9d4uhf.md-input type="text" /
+      li
+        a.dropdown-toggle data-toggle="dropdown" href="#"
+          i.material-icons dashboard
+        p Dashboard
+      li
+        .dropdown
+          a.dropdown-toggle data-toggle="dropdown"
+            i.material-icons notifications
+            span.notification 5
+          p Notifications
+          ul.dropdown-menu.dropdown-menu-right
+            li
+              a href="#"  Mike John responded to your email
+            li
+              a href="#"  You have 5 new tasks
+            li
+              a href="#"  You're now friend with Andrew
+            li
+              a href="#"  Another Notification
+            li
+              a href="#"  Another One
+      li
+        a.dropdown-toggle data-toggle="dropdown" href="#"
+          i.material-icons person
+        p Profile
+    ul.md-list.nav.md-theme-default
+      li.md-list-item to="/dashboard"
+        a.md-list-item-router.md-list-item-container.md-button-clean.nav-item.active.router-link-active href="#/dashboard" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default dashboard
+          p Dashboard
+          span
+      li.md-list-item to="/user"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/user" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default person
+          p User Profile
+          span
+      li.md-list-item to="/table"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/table" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default content_paste
+          p Table list
+          span
+      li.md-list-item to="/typography"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/typography" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default library_books
+          p Typography
+          span
+      li.md-list-item to="/icons"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/icons" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default bubble_chart
+          p Icons
+          span
+      li.md-list-item to="/maps"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/maps" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default location_on
+          p Maps
+          span
+      li.md-list-item to="/notifications"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/notifications" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default notifications
+          p Notifications
+          span
+      li.md-list-item.active-pro to="/upgrade"
+        a.md-list-item-router.md-list-item-container.md-button-clean href="#/upgrade" mdripple="true" /
+        .md-list-item-content.md-ripple
+          i.md-icon.md-icon-font.md-theme-default unarchive
+          p Upgrade to PRO
+          span

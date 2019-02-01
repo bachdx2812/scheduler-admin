@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "salons", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.text "desc"
+    t.text "address"
     t.string "phone_number"
     t.datetime "created_at"
     t.datetime "updated_at"
