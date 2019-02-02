@@ -7,7 +7,7 @@ Vue.use(VueMaterial)
 import TurbolinksAdapter from 'vue-turbolinks'
 Vue.use(TurbolinksAdapter)
 
-import './style/application.scss'
+import '../styles/material-dashboard.scss'
 
 document.addEventListener('turbolinks:load', () => {
   const vue = new Vue({
