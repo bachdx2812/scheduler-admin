@@ -1,0 +1,54 @@
+.md-toolbar.md-transparent.md-theme-default.md-elevation-0
+  .md-toolbar-row
+    .md-toolbar-section-start
+      h3.md-title Dashboard
+    .md-toolbar-section-end
+      button.md-button.md-just-icon.md-simple.md-toolbar-toggle.md-theme-default type="button"
+        .md-ripple
+          .md-button-content
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          span
+      .md-collapse
+        .md-autocomplete
+          .md-field.md-autocomplete.search.md-theme-default.md-clearable
+            .md-menu
+              input#md-input-3oyilfjhm.md-input type="text" /
+            label Search...
+            /!
+            /!
+            /!
+        ul.md-list.md-theme-default
+          li.md-list-item to="/"
+            a.md-list-item-router.md-list-item-container.md-button-clean.router-link-active href="#/" mdripple="true"
+              .md-list-item-content.md-ripple
+                i.material-icons dashboard
+                p.hidden-lg.hidden-md Dashboard
+                span
+          li.md-list-item.dropdown to="/notifications"
+            a.md-list-item-router.md-list-item-container.md-button-clean href="#/notifications" mdripple="true"
+              .md-list-item-content.md-ripple
+                .dropdown
+                  a.dropdown-toggle data-toggle="dropdown"
+                    i.material-icons notifications
+                    span.notification 5
+                  p.hidden-lg.hidden-md Notifications
+                  ul.dropdown-menu.dropdown-menu-right
+                    li
+                      a href="#"  Mike John responded to your email
+                    li
+                      a href="#"  You have 5 new tasks
+                    li
+                      a href="#"  You're now friend with Andrew
+                    li
+                      a href="#"  Another Notification
+                    li
+                      a href="#"  Another One
+                span
+          li.md-list-item to="/user"
+            a.md-list-item-router.md-list-item-container.md-button-clean href="#/user" mdripple="true"
+              .md-list-item-content.md-ripple
+                i.material-icons person
+                p.hidden-lg.hidden-md Profile
+                span

@@ -22,7 +22,6 @@ html
       div(data-color="green")
       .main-panel
         = render "layouts/shared/toolbar"
-        .content
-          .md-content
-            = render "layouts/shared/notification"
-            = yield
+        .notice= notice
+        .alert= alert
+        = yield

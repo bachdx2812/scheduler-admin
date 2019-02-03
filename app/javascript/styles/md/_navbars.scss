@@ -125,9 +125,11 @@
 
   .notification{
     position: absolute;
-    top: 0px;
+    // top: 0px;
+    top: -10px;
     border: 1px solid #FFF;
-    right: 7px;
+    // right: 7px;
+    right: -8px;
     font-size: 9px;
     background: #f44336;
     color: #FFFFFF;
