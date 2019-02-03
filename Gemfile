@@ -105,3 +105,6 @@ gem 'sidekiq-unique-jobs'
 
 # log
 gem 'chrono_logger'
+
+# authentication
+gem  'devise'
