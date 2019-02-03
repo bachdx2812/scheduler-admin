@@ -49,3 +49,9 @@
             i.md-icon.md-icon-font.md-theme-default notifications
             p Notifications
             span
+      li.md-list-item.active-pro
+        = link_to destroy_user_session_path, method: :delete, class: 'md-list-item-router md-list-item-container md-button-clean' do
+          .md-list-item-content.md-ripple
+            i.fas.fa-sign-out-alt
+            p Sign Out
+            span
