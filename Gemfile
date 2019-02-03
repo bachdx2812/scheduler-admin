@@ -108,3 +108,6 @@ gem 'chrono_logger'
 
 # authentication
 gem  'devise'
+
+# authorization
+gem 'pundit'
