@@ -80,19 +80,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use weboack
 gem 'webpacker', '~> 3.5'
 
-# Sass as css engine
-gem 'sass-rails', '~> 5.0'
-
 # Use Template Engine "slim"
 gem 'slim-rails'
-# Authentication module
-gem 'devise'
 # DB manage
 gem 'ridgepole'
-
 # codebase master data
 gem 'active_hash'
-
 # Redis Adapter
 gem 'redis'
 gem 'redis-namespace'
@@ -102,12 +95,9 @@ gem 'sidekiq-scheduler'
 gem 'sidekiq-status'
 gem 'sidekiq-bulk'
 gem 'sidekiq-unique-jobs'
-
 # log
 gem 'chrono_logger'
-
 # authentication
 gem  'devise'
-
 # authorization
 gem 'pundit'
