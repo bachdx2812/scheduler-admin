@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
 
   root to: 'home#index'
+
+  namespace :admin do
+    resources :salons
+  end
 end
