@@ -101,3 +101,5 @@ gem 'chrono_logger'
 gem  'devise'
 # authorization
 gem 'pundit'
+# current link
+gem 'active_link_to'
