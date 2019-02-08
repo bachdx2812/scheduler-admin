@@ -103,3 +103,6 @@ gem  'devise'
 gem 'pundit'
 # current link
 gem 'active_link_to'
+
+# search engine
+gem 'ransack'

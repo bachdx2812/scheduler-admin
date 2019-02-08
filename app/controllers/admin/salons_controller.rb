@@ -4,11 +4,12 @@ class Admin::SalonsController < Admin::BaseController
   before_action :set_page_title
 
   def index
-
+    @q = Salon.ransack(params[:q])
+    @salons = @q.result(distinct: true)
   end
 
   def new
-
+    @salon = Salon.new
   end
 
   def create
@@ -24,6 +25,11 @@ class Admin::SalonsController < Admin::BaseController
   end
 
   private
+
+  def set_salon
+    @salon = Salon.find_by(params[:id])
+    authorize @salon
+  end
 
   def authorize_resource
     authorize Salon

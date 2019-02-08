@@ -9,4 +9,8 @@ class SalonPolicy < ApplicationPolicy
   def index?
     user.admin? ? true : false
   end
+
+  def edit?
+    true
+  end
 end
