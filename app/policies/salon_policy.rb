@@ -11,6 +11,10 @@ class SalonPolicy < ApplicationPolicy
   end
 
   def edit?
-    true
+    user.admin? ? true : false
+  end
+
+  def update?
+    edit?
   end
 end

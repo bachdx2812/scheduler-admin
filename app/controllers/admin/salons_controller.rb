@@ -17,17 +17,21 @@ class Admin::SalonsController < Admin::BaseController
   end
 
   def edit
-
   end
 
   def update
-
+    if @salon.update(salon_params)
+      redirect_to edit_admin_salon_path(@salon), notice: 'Update Salon success'
+    else
+      render :edit
+    end
   end
 
   private
 
   def set_salon
-    @salon = Salon.find_by(params[:id])
+    @salon = Salon.find(params[:id])
+
     authorize @salon
   end
 
@@ -37,5 +41,9 @@ class Admin::SalonsController < Admin::BaseController
 
   def set_page_title
     @title = 'Manage Salons'
+  end
+
+  def salon_params
+    params.require(:salon).permit(:name, :desc, :phone_number, :address)
   end
 end

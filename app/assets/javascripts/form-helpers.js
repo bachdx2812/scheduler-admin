@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 function formInputLabelPopUp() {
-  const userSelection = document.getElementsByClassName('md-input');
+  const userSelection = document.getElementsByClassName('form-helper');
   for(let i = 0; i < userSelection.length; i++) {
     let element = userSelection[i];
     if (element.value) {
