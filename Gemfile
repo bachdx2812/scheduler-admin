@@ -106,3 +106,9 @@ gem 'active_link_to'
 
 # search engine
 gem 'ransack'
+
+# soft delete
+gem "paranoia", "~> 2.2"
+
+# jquery adapter
+gem 'jquery-rails'

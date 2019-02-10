@@ -32,6 +32,14 @@ class Admin::SalonsController < Admin::BaseController
     end
   end
 
+  def destroy
+    if @salon.destroy
+      redirect_to admin_salons_path, notice: 'Deleted salon'
+    else
+      redirect_to admin_salons_path, alert: 'Failed to delete salon'
+    end
+  end
+
   private
 
   def set_salon

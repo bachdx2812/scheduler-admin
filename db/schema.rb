@@ -66,6 +66,8 @@ ActiveRecord::Schema.define(version: 2019_02_09_175334) do
     t.string "phone_number"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "deleted_at"
+    t.index ["deleted_at"], name: "idx_on_deleted_at"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

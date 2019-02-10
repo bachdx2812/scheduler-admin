@@ -8,4 +8,7 @@ create_table "salons", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=
   t.string   "phone_number"
   t.datetime "created_at"
   t.datetime "updated_at"
+  t.datetime "deleted_at"
 end
+
+add_index "salons", ["deleted_at"], name: "idx_on_deleted_at"

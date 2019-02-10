@@ -39,11 +39,6 @@
                       td.md-table-cell
                         .md-table-cell-container= salon.desc
                       td.md-table-cell
-                        md-menu md-align-trigger="" md-size="medium"
-                          md-button.md-icon-button md-menu-trigger=""
-                            md-icon call_to_action
-                          md-menu-content
-                            md-menu-item= link_to 'Edit', edit_admin_salon_path(salon)
-                            md-menu-item
-                              = link_to 'Delete', admin_salon_path(salon), action: :destroy
-                            md-menu-item My Item 3
+                        = link_to 'Edit', edit_admin_salon_path(salon)
+                        |
+                        = link_to 'Destroy', admin_salon_path(salon), method: :delete, data: { confirm: 'Are you sure?' }

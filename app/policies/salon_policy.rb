@@ -26,4 +26,8 @@ class SalonPolicy < ApplicationPolicy
   def update?
     edit?
   end
+
+  def destroy?
+    user.admin? ? true : false
+  end
 end
