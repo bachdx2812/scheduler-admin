@@ -1,6 +1,6 @@
-window.onload = function() {
+$(document).on('turbolinks:load', function() {
   formInputLabelPopUp();
-}
+});
 
 function formInputLabelPopUp() {
   const userSelection = document.getElementsByClassName('form-helper');

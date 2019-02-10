@@ -39,6 +39,8 @@
                       td.md-table-cell
                         .md-table-cell-container= salon.desc
                       td.md-table-cell
-                        = link_to 'Edit', edit_admin_salon_path(salon)
-                        |
-                        = link_to 'Destroy', admin_salon_path(salon), method: :delete, data: { confirm: 'Are you sure?' }
+                        .md-table-cell-container
+                          = link_to edit_admin_salon_path(salon) do
+                            md-icon.far.fa-edit
+                          = link_to admin_salon_path(salon), method: :delete, data: { confirm: 'Are you sure?' } do
+                            md-icon.far.fa-trash-alt
