@@ -13,7 +13,12 @@ class Admin::SalonsController < Admin::BaseController
   end
 
   def create
-
+    @salon = Salon.new(salon_params)
+    if @salon.save
+      redirect_to edit_admin_salon_path(@salon), notice: 'Successfully created new salon'
+    else
+      render :new
+    end
   end
 
   def edit

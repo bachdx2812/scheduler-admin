@@ -10,6 +10,15 @@ class SalonPolicy < ApplicationPolicy
     user.admin? ? true : false
   end
 
+  # @TODO: base on salon user id
+  def new?
+    user.admin? ? true : false
+  end
+
+  def create?
+    new?
+  end
+
   def edit?
     user.admin? ? true : false
   end
