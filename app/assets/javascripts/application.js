@@ -14,4 +14,3 @@
 //= require activestorage
 //= require turbolinks
 //= require cable
-//= require form-helpers

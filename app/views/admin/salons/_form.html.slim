@@ -7,23 +7,26 @@
         span
           b= message
 .md-layout-item.md-small-size-100.md-size-50
-  .md-field.md-theme-default
+  md-field
     = f.label :name
-    = f.text_field :name, class: 'md-input form-helper'
+    md-input(name="salon[name]" value="#{@salon.name}")
+    span.md-helper-text Helper text
 .md-layout-item.md-small-size-100.md-size-50
-  .md-field.md-theme-default
+  md-field
     = f.label :phone_number
-    = f.text_field :phone_number, class: 'md-input form-helper'
+    md-input(name="salon[phone_number]" value="#{@salon.phone_number}")
+    span.md-helper-text Helper text
 .md-layout-item.md-small-size-100.md-size-100
-  .md-field.md-theme-default
+  md-field
     = f.label :address
-    = f.text_field :address, class: 'md-input form-helper'
+    md-input(name="salon[address]" value="#{@salon.address}")
+    span.md-helper-text Helper text
 .md-layout-item.md-size-100
-  .md-field.md-theme-default.md-has-textarea maxlength="5"
+  md-field
     = f.label :desc
-    = f.text_field :desc, class: 'md-textarea form-helper'
+    md-input(name="salon[desc]" value="#{@salon.desc}")
+    span.md-helper-text Helper text
 .md-layout-item.md-size-100.text-right
   = button_tag type: 'submit', class: 'md-button md-raised md-success md-theme-default' do
     .md-ripple
       .md-button-content Submit
-      span
