@@ -37,4 +37,6 @@ curl -X POST -d email="test@test.com" -d password="changeme" http://localhost:30
 
 ### How to access API after got token
 
+```bash
 curl --header "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MjYxOTA1MDB9.ABVCQGdzF3u2XcAp66vXZxeUy2dhsCuxsg88NsEdoFs" http://localhost:3000/api/{salons}
+```
