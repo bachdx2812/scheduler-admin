@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :salons
   end
+
+  namespace :api do
+    post 'auth' => 'authentication#authenticate_user'
+    resources :salons
+  end
 end

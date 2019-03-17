@@ -103,6 +103,8 @@ gem  'devise'
 gem 'pundit'
 # current link
 gem 'active_link_to'
+# json web token
+gem 'jwt'
 
 # search engine
 gem 'ransack'
