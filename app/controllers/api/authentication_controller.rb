@@ -23,12 +23,7 @@ class Api::AuthenticationController < Api::BaseController
           user_id: user.id,
           exp: (Time.now + 2.week).to_i
         }
-      ),
-      user: {
-        id: user.id,
-        email: user.email
-      }
+      )
     }
   end
-
 end

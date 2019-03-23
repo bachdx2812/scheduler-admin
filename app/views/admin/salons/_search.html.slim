@@ -8,22 +8,22 @@
           .md-layout-item.md-size-50
             md-field
               = f.label :name
-              md-input(name="q[name_cont]" value="#{params[:q][:name_cont]}")
+              md-input(name="q[name_cont]" value="#{params.dig(:q, :name_cont)}")
 
           .md-layout-item.md-size-50
             md-field
               = f.label :desc
-              md-input(name="q[desc_cont]" value="#{params[:q][:desc_cont]}")
+              md-input(name="q[desc_cont]" value="#{params.dig(:q, :desc_cont)}")
 
           .md-layout-item.md-size-50
             md-field
               = f.label :address
-              md-input(name="q[address_cont]" value="#{params[:q][:address_cont]}")
+              md-input(name="q[address_cont]" value="#{params.dig(:q, :address_cont)}")
 
           .md-layout-item.md-size-50
             md-field
               = f.label :phone_number
-              md-input(name="q[phone_number_cont]" value="#{params[:q][:phone_number_cont]}")
+              md-input(name="q[phone_number_cont]" value="#{params.dig(:q, :phone_number_cont)}")
 
           .md-layout-item.md-small-size-100
             md-button.md-primary(type='submit' value="Search") Search

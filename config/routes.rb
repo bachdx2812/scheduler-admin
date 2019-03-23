@@ -12,8 +12,11 @@ Rails.application.routes.draw do
     resources :salons
   end
 
-  namespace :api do
-    post 'auth' => 'authentication#authenticate_user'
-    resources :salons
+  namespace :api, defaults: { format: :json } do
+    post 'auth', to: 'authentication#authenticate_user'
+    get 'me', to: 'users#me'
+
+    resources :salons do
+    end
   end
 end

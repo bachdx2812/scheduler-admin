@@ -1,5 +1,7 @@
 class Api::BaseController < ActionController::Base
-  attr_reader :current_user
+  include ActionController::MimeResponds
+  respond_to :json
+
   before_action :authenticate_request!
 
   protected

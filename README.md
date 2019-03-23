@@ -32,7 +32,10 @@ http://localhost:3000/api
 ### How to get token
 
 ```bash
-curl -X POST -d email="test@test.com" -d password="changeme" http://localhost:3000/auth
+curl -X POST -d email="test@test.com" -d password="changeme" http://localhost:3000/api/auth
+
+# current user
+curl --header "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MjYxOTA1MDB9.ABVCQGdzF3u2XcAp66vXZxeUy2dhsCuxsg88NsEdoFs" http://localhost:3000/api/me
 ```
 
 ### How to access API after got token

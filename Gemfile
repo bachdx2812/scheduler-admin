@@ -114,3 +114,6 @@ gem "paranoia", "~> 2.2"
 
 # jquery adapter
 gem 'jquery-rails'
+
+# CORS
+gem 'rack-cors', require: 'rack/cors'
